@@ -12,8 +12,7 @@
   function has_length($value, $options=array()) {
     // TODO
 	$length=strlen($value);
-	$options = ['min'=>2,'max'=>255];
-	if ($length > $options['max'] || $length < $options['min'])
+	if ($length > $options['1'] || $length < $options['0'])
 		return false;
 	else
 		return true;

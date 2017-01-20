@@ -8,7 +8,7 @@
 	$email_adr="";
 	$usename="";
 	$errors = [];
-	$options = [];
+	$options = array(2,255);
   // if this is a POST request, process the form
   // Hint: private/functions.php can help
   // Confirm that POST values are present before accessing them.
@@ -46,10 +46,13 @@
 	//valid usename
 	if (is_blank($_POST['useName']))
 		$errors[] = "useName cannot be blank.";
-	else if (!has_length($_POST['useName'],$options))
-		$errors[] = "useName must be between 2 and 255 characters";
-	else 
-		$usename = $_POST['useName'];
+	else {
+		$options[0]=8;
+		if (!has_length($_POST['useName'],$options))
+			$errors[] = "useName must be between 8 and 255 characters";
+		else 
+			$usename = $_POST['useName'];
+	}
 	
 	
 	
