@@ -57,7 +57,7 @@ The following advanced user stories are optional:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/aKw10yT.gif' />
+<img src='http://i.imgur.com/sUblnlC.gif' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
